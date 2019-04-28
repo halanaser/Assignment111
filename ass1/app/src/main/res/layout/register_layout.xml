@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_User"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/login"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:hint="Full Name"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iv_User"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:hint="Email"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_Date"
+        android:hint="Birth Date"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_reg_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/calender"
+        android:ems="10"
+         />
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:background="#11000000"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_Date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:background="@drawable/button_rectangle_pink"
+        android:textColor="#ffffff"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_reg_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Register" />
+
+
+</RelativeLayout>
